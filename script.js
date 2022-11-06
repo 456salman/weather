@@ -23,7 +23,6 @@ form.addEventListener("submit" , hello=> {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      // const { main, name, sys, weather } = data;
      const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
       const li = document.createElement("li");
@@ -57,8 +56,6 @@ form.addEventListener("submit" , hello=> {
   .then(data => {
     console.log(data)
   for(let i = 0; i < data.list.length; i += 8 ){
- 
-    // const { main, name, sys, weather } = data;
    const icon = `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png`;
 
     const li = document.createElement("li");
